@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#gridWrapperHome{
+    display: grid;
+    grid-template-columns: 375px;
+    grid-template-rows:  150px 400px minmax(200px, 1fr);
+    grid-template-areas: 
+    "he"
+    "bg"
+    "tx"
+    ;   
+}
+
+header{
+    grid-area: he;
+}
+
+#picture{
+    grid-area: bg;
+}
+
+#pictureDescription{
+    grid-area: tx;
+}
