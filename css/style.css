@@ -4,10 +4,27 @@
     box-sizing: border-box;
 }
 
+#link_list{
+    background-color: blue;
+}
+
+#burger div{
+    width: 25px;
+    height: 3px;
+    background-color: aqua;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+#header{
+    display: flex;
+    justify-content: flex-end;
+}
+
 #gridWrapperHome{
     display: grid;
     grid-template-columns: 375px;
-    grid-template-rows:  150px 400px minmax(200px, 1fr);
+    grid-template-rows:  100px 400px minmax(200px, 1fr);
     grid-template-areas: 
     "he"
     "bg"
@@ -20,9 +37,11 @@ header{
 }
 
 #picture{
+    background-color: brown;
     grid-area: bg;
 }
 
 #pictureDescription{
+    background-color: aqua;
     grid-area: tx;
 }
