@@ -1,8 +1,8 @@
 const burger = document.getElementById('burger')
-const link_list = document.getElementById('link_list')
+const link_list = document.getElementById('linkList')
 
 function toggleMenu() {
-    link_list.classList.toggle('link_list_visible')
+    linkList.classList.toggle('linkList_visible')
     burger.classList.toggle('burger_in_x_form')
 }
 

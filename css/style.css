@@ -16,12 +16,12 @@ nav{
     text-decoration: none;
 }
 
-#link_list{
+#linkList{
     background-color: black;
-    height: 115%;
+    height: 90vh;
     width: 100%;
     position: absolute;
-    top: -1000px;
+    top: -100vh;
     right: 0px;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ nav{
     transition: all none;
 }
 
-#link_list a {
+#linkList a {
     color: whitesmoke;
     text-decoration: none
 }
@@ -48,8 +48,8 @@ nav{
     cursor: pointer;
 }
 
-.link_list_visible{
-    transform: translateY(+1090px);
+.linkList_visible{
+    transform: translateY(+110vh);
 }
 
 .burger_in_x_form #burger_line_2{
@@ -82,11 +82,15 @@ nav{
     overflow-x: hidden;
     display: grid;
     grid-template-columns: minmax(20px, 100%);
-    grid-template-rows:  90px minmax(600px, 1fr);
+    grid-template-rows:  10vh 90vh;
     grid-template-areas: 
     "he"
     "bg"
     ;   
+}
+
+#gridWrapperCourses{
+    overflow-x: hidden;
 }
 
 header{
@@ -97,6 +101,7 @@ header{
     grid-area: bg;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 #picture{
@@ -124,8 +129,7 @@ header{
 
     #gridWrapperHome{
         display: grid;
-        grid-template-columns: minmax(20px, 100%);
-        grid-template-rows:  90px 700px;
+        grid-template-columns: 100%;
         grid-template-areas: 
         "he"
         "bg"
@@ -135,15 +139,13 @@ header{
     #header{
         justify-content: center;
         margin: 0%;
+        height: 100%;
     }
-
 
     #picture{
         background: url(../img/catusStarsDesktop.jpg);
         background-size: cover;
-        height: 87%;
-        position: relative;
-        top: 90px;
+        height: 90vh;
         overflow-y: hidden;
     }
     
@@ -157,23 +159,17 @@ header{
 
     }
 
-    #link_list{
+    #linkList{
         background-color: black;
-        height: 90px;
+        height: 10vh;
         width: 100%;
         position: absolute;
-        top: 90px;
+        top: 10vh;
         right: 0;
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        list-style: none;
-        text-transform: uppercase;
-        transition: all 0s;
     }
 
-    .link_list_visible{
+    .linkList_visible{
         transform: none;
     }
 
