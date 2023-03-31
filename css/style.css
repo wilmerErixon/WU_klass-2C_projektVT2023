@@ -76,25 +76,18 @@ nav{
     padding-right: 30px;
     background-color: black;
     color: whitesmoke;
+    grid-area: he;
 }
 
 #gridWrapperHome{
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: minmax(20px, 100%);
+    grid-template-columns: 100vw;
     grid-template-rows:  10vh 90vh;
     grid-template-areas: 
     "he"
     "bg"
     ;   
-}
-
-#gridWrapperCourses{
-    overflow-x: hidden;
-}
-
-header{
-    grid-area: he;
 }
 
 #pictureAndDescription{
@@ -107,7 +100,7 @@ header{
 #picture{
         height: 75%;
         width: 100%;
-        background-image: url(../img/catusStarsDesktop.jpg);
+        background-image: url(../img/home/cactusStarsDesktop.jpg);
         background-size: cover;
         background-position: center;
 }
@@ -122,19 +115,142 @@ header{
     color: whitesmoke;
 }
 
+#gridWrapperCourses{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 30vh 30vh 30vh 30vh 30vh 30vh;
+    grid-template-areas: 
+    "he"
+    "ap"
+    "dp"
+    "wp"
+    "mp"
+    "ps"
+    "ic"
+    ;
+}
+
+.course{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 7px;
+
+}
+
+.courseTitle{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: whitesmoke;
+}
+
+.applyNow{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: whitesmoke;
+    font-size:  135%;
+    cursor: pointer;
+}
+
+#analogPhotography{
+    grid-area: ap;
+    background-image: url(../img/courses/analogPhotographyPicture.jpg);
+    background-size: cover;
+    background-position: center;
+    border-color:darkslategrey;
+    margin-top: none;
+}
+
+#analogPicture{
+    display: none;
+}
+
+#digitalPhotography{
+    grid-area: dp;
+    background-image: url(../img/courses/digitalPhotographyPicture.jpg);
+    background-size: cover;
+    background-position: center;
+    border-color:deepskyblue;
+}
+
+#digitalPicture{
+    display: none;
+}
+
+#wildlifePhotography{
+    grid-area: wp;
+    background-image: url(../img/courses/wildlifePhotographyPicture.jpg);
+    background-size: cover;
+    background-position: center;
+    border-color:chocolate;
+}
+
+#wildlifePicture{
+    display: none;
+}
+
+#macroPhotography{
+    grid-area: mp;
+    background-image: url(../img/courses/macroPhotographyPicture.jpg);
+    background-size: cover;
+    background-position: center;
+    border-color: forestgreen;
+}
+
+#macroPicture{
+    display: none;
+}
+
+#photoshop{
+    grid-area: ps;
+    background-image: url(../img/courses/photoshopPicture.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-color: saddlebrown;
+}
+
+#photoshopPicture{
+    display: none;
+}
+
+#imageComposition{
+    grid-area: ic;
+    background-image: url(../img/courses/imageCompositionPicture.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-color:lightseagreen;
+    margin-bottom: 10px;
+}
+
+#compositionPicture{
+    display: none;
+}
+
 @media screen and (min-width: 700px){ 
 
     #burger{
         display: none;
     }
 
-    #gridWrapperHome{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "he"
-        "bg"
-        ;   
+    #linkList{
+        background-color: black;
+        height: 10vh;
+        width: 100vw;
+        position: absolute;
+        top: 10vh;
+        flex-direction: row;
+    }
+
+    .linkList_visible{
+        transform: none;
     }
 
     #header{
@@ -158,18 +274,87 @@ header{
 
     }
 
-    #linkList{
+    #gridWrapperCourses{
         background-color: black;
-        height: 10vh;
-        width: 100%;
-        position: absolute;
-        top: 10vh;
-        right: 0;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh 60vh 50vh 50vh 50vh 50vh 52vh;
+    }
+
+    .course{
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 1vh;
+    }
+
+    #analogPhotography{
+        background-image: none;
+        background-color: black;
+        margin-top: 12vh;
+        height: 48vh;
+        flex-direction: row;
+        overflow-y: hidden;
+    }
+
+    #analogPicture{
+        display: initial;
+        object-fit: cover;
+        height: 300px;
+    }
+
+    #digitalPhotography{
+        background-image: none;
+        background-color: black;
+        height: 48vh;
         flex-direction: row;
     }
 
-    .linkList_visible{
-        transform: none;
+    #digitalPicture{
+        display: initial;
     }
 
+    #wildlifePhotography{
+        background-image: none;
+        background-color: black;
+        height: 48vh;
+        flex-direction: row;
+    }
+
+    #wildlifePicture{
+        display: initial;
+    }
+
+    #macroPhotography{
+        background-image: none;
+        background-color: black;
+        height: 48vh;
+        flex-direction: row;
+    }
+
+    #macroPicture{
+        display: initial;
+    }
+
+    #photoshop{
+        background-image: none;
+        background-color: black;
+        height: 48vh;
+        flex-direction: row;
+    }
+    
+    #photoshopPicture{
+        display: initial;
+    }
+
+    #imageComposition{
+        background-image: none;
+        background-color: black;
+        margin-bottom: 2vh;
+        height: 48vh;
+        flex-direction: row;
+    }
+
+    #compositionPicture{
+        display: initial;
+    }
 }
