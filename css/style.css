@@ -250,17 +250,50 @@ a{
 }
 
 .aboutUsPicture{
-    border-width: 2px;
+    border-width: 5px;
     border-style: solid;
+    border-radius: 7px;
     border-color: whitesmoke;
+    margin-bottom: -1vh;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 .aboutUsText{
+    font-size: 2vh;
     padding: 10px;
     color: whitesmoke;
-    border-width: 2px;
+    border-width: 5px;
     border-style: solid;
+    border-radius: 7px;
     border-color: whitesmoke;
+    margin-top: 0vh;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#aboutUsTextOurStory{
+    border-color: chocolate;
+}
+
+#aboutUsPictureOurStory{
+    border-color: chocolate;
+}
+
+#aboutUsTextOurMission{
+    border-color: rgb(40, 2, 74);
+}
+
+#aboutUsPictureOurMission{
+    border-color: rgb(40, 2, 74);
+}
+
+#aboutUsPictureSustainability{
+    border-color: darkgreen;
+}
+
+#aboutUsTextSustainability{
+    border-color: darkgreen;
 }
 
 .newParagraph{
@@ -299,10 +332,8 @@ a{
 }
 
 .analogCourse{
-    margin-top: 1vh;
     margin-left: 2vw;
     margin-right: 2vw;
-    margin-bottom: 2vh;
 }
 
 .analogCourseImage{
@@ -310,6 +341,58 @@ a{
     border-style: solid;
     border-radius: 7px;
     border-color: whitesmoke;
+    margin-top: 1vh;
+    margin-bottom: -1vh;
+}
+
+#analogCourseImageAbout{
+    border-color: rgb(2, 67, 2);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#analogCourseTextabout{
+    border-color: rgb(2, 67, 2);
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#analogCourseImageAboutPhotography{
+    border-color: rgb(170, 87, 49);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#analogCourseTextaboutphotography{
+    border-color: rgb(170, 87, 49);
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#analogCourseImageInstructor{
+    border-color: rgb(86, 62, 9);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#analogCourseTextInstructor{
+    border-color: rgb(86, 62, 9);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#analogCourseImageStudent{
+    border-color: rgb(90, 142, 205);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#analogCourseTextStudent{
+    border-color: rgb(90, 142, 205);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .analogCourseText{
@@ -319,6 +402,7 @@ a{
     border-style: solid;
     border-radius: 7px;
     border-color: whitesmoke;
+    margin-bottom: 2vh;
 }
 
 .analogCourseTitle{
@@ -555,11 +639,6 @@ a{
         margin-right: 1vw;
     }
 
-    .aboutUsText{
-        margin-top: 
-        1vh;
-    }
-
     #gridWrapperAnalogPhotographyCourse{
         background-color: black;
         grid-template-columns: 33.33% 33.33% 33.33%;
@@ -573,8 +652,25 @@ a{
         ;
     }
 
+    .analogCourse{
+        margin-bottom: 1vh;
+        overflow-y: hidden;
+    }
+
     .analogCourseImage{
         object-fit: cover;
+    }
+
+    .analogCourseText{
+        overflow-y: hidden;
+    }
+
+    .analogCourseText p{
+        font-size: 2.5vh;
+    }
+
+    .analogCourseText h2{
+        font-size: 4vh;
     }
 
     #analogCourseImageAbout{
@@ -590,34 +686,58 @@ a{
     }
 
     #analogCourseImageInstructor{
+        height: 44vh;
         width: 30vw;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 7px;
     }
 
     #analogCourseImageStudent{
+        height: 39vh;
         width: 30vw;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 7px;
     }
 
     #analogCourseTextaboutphotography{
-        height: 75vh;
+        height: auto;
+        border-top: none;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
     }
 
     #analogCourseTextabout{
-        height: 75vh;
+        height: auto;
+        border-top: none;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
+        margin-bottom: 2vh;
     }
 
     #analogCourseTextInstructor{
+        margin-top: 1vh;
+        height: 44vh;
         width: 66vw;
+        border-top: visible;
+        border-left: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
     }
 
     #analogCourseTextStudent{
+        margin-top: 1vh;
+        height: 39vh;
         width: 66vw;
+        border-left: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 0px;
     }
 
-    #analogCourseTextApply{
+    #analogCourseTextApply h2{
         font-size: 3vw;
     }
 
@@ -625,7 +745,7 @@ a{
         margin-top: 11vh;
         display: inline-flex;
         flex-direction: column;
-        height: 135vh;
+        height: auto;
         width: 31vw;
         margin-right: 1vw;
     }
@@ -634,7 +754,7 @@ a{
         margin-top: 11vh;
         display: inline-flex;
         flex-direction: column;
-        height: 135vh;
+        height: auto;
         width: 62.5vw;
         margin-left: 1vw;
     }
@@ -656,7 +776,7 @@ a{
         justify-content: center;
         text-align: center;
         cursor: pointer;
-        height: 15vh;
+        height: 12vh;
         width: 96vw;
     }
 }
