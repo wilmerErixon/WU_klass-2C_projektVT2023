@@ -20,8 +20,8 @@ a{
     text-decoration: none;
 }
 
-#logo_image{
-    height: 10vh;
+#logoImage{
+    height: 8vh;
 }
 
 #linkList{
@@ -437,6 +437,10 @@ a{
 
     #burger{
         display: none;
+    }
+
+    #logoImage{
+        height: 10vh;
     }
 
     #linkList{
