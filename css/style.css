@@ -21,7 +21,9 @@ a{
 }
 
 #logoImage{
-    height: 8vh;
+    height: 14vh;
+    margin-right: -40px;
+    margin-left: -10px;
 }
 
 #linkList{
@@ -37,7 +39,6 @@ a{
     justify-content: space-around;
     list-style: none;
     text-transform: uppercase;
-    transition: all none;
 }
 
 #linkList a {
@@ -109,7 +110,7 @@ a{
 #picture{
     height: 75%;
     width: 100%;
-    background-image: url(../img/home/cactusStarsDesktop.jpg);
+    background-image: url(../img/home/cactus_stars_desktop.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -185,16 +186,16 @@ a{
 
 #analogPhotography{
     grid-area: ap;
-    background-image: url(../img/courses/analogPhotographyPicture.jpg);
+    background-image: url(../img/courses/analog_photography_picture.jpg);
     background-size: cover;
     background-position: center;
     border-color:darkslategrey;
-    margin-top: none;
+    margin-top: 0;
 }
 
 #digitalPhotography{
     grid-area: dp;
-    background-image: url(../img/courses/digitalPhotographyPicture.jpg);
+    background-image: url(../img/courses/digital_photography_picture.jpg);
     background-size: cover;
     background-position: center;
     border-color:deepskyblue;
@@ -202,7 +203,7 @@ a{
 
 #wildlifePhotography{
     grid-area: wp;
-    background-image: url(../img/courses/wildlifePhotographyPicture.jpg);
+    background-image: url(../img/courses/wildlife_photography_picture.jpg);
     background-size: cover;
     background-position: center;
     border-color:chocolate;
@@ -210,7 +211,7 @@ a{
 
 #macroPhotography{
     grid-area: mp;
-    background-image: url(../img/courses/macroPhotographyPicture.jpg);
+    background-image: url(../img/courses/macro_photography_picture.jpg);
     background-size: cover;
     background-position: center;
     border-color: forestgreen;
@@ -218,7 +219,7 @@ a{
 
 #photoshop{
     grid-area: ps;
-    background-image: url(../img/courses/photoshopPicture.jpg);
+    background-image: url(../img/courses/photoshop_picture.jpg);
     background-size: cover;
     background-position: bottom;
     border-color: saddlebrown;
@@ -226,7 +227,7 @@ a{
 
 #imageComposition{
     grid-area: ic;
-    background-image: url(../img/courses/imageCompositionPicture.jpg);
+    background-image: url(../img/courses/image_composition_picture.jpg);
     background-size: cover;
     background-position: bottom;
     border-color:lightseagreen;
@@ -246,6 +247,11 @@ a{
     ;
 }
 
+.AboutUsSuMiText{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .aboutUsArticle{
     margin-top: 1vh;
     margin-left: 2vw;
@@ -256,16 +262,11 @@ a{
 .aboutUsPicture{
     border-width: 5px;
     border-style: solid;
-    border-radius: 7px;
     border-color: whitesmoke;
-    margin-bottom: -1vh;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 .aboutUsText{
     font-size: 2vh;
-    padding: 10px;
     color: whitesmoke;
     border-width: 5px;
     border-style: solid;
@@ -278,30 +279,59 @@ a{
 
 #aboutUsTextOurStory{
     border-color: chocolate;
+    padding: 10px;  
 }
 
 #aboutUsPictureOurStory{
     border-color: chocolate;
+    margin-bottom: -2vh;
+    border-radius: 7px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 #aboutUsTextOurMission{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     border-color: rgb(40, 2, 74);
 }
 
 #aboutUsPictureOurMission{
     border-color: rgb(40, 2, 74);
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
 }
 
 #aboutUsPictureSustainability{
     border-color: darkgreen;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
 }
 
 #aboutUsTextSustainability{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
     border-color: darkgreen;
 }
 
 .newParagraph{
     margin-top: 1em;
+}
+
+.newParagraphSuMi{
+    margin-top: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#bottomSu{
+    padding-bottom: 10px;
+}
+
+#bottomMi{
+    padding-bottom: 10px;
 }
 
 .aboutUsHeadline{
@@ -400,6 +430,7 @@ a{
 }
 
 .analogCourseText{
+    background-color: black;
     padding: 10px;
     color: whitesmoke;
     border-width: 5px;
@@ -440,7 +471,9 @@ a{
     }
 
     #logoImage{
-        height: 10vh;
+        height: 15vh;
+        margin-right: -25px;
+        margin-left: -25px;
     }
 
     #linkList{
@@ -526,12 +559,11 @@ a{
 
     .readMore{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin-top: none;
+        margin-top: 0;
         font-size: 2vw;
         border-style: solid;
         border-width: 2px;
         border-radius: 5px;
-        margin-top: none;
     }
 
     #readMoreAnalog{
@@ -625,10 +657,11 @@ a{
 
     #gridWrapperAboutUs{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 10vh auto;
+        grid-template-rows: 10vh auto auto;
         grid-template-areas: 
         "he he he"
-        "os om su"
+        "os om om"
+        "os su su"
         ;
     }
 
@@ -638,6 +671,25 @@ a{
         margin-right: 0.5vw;
         margin-bottom: 2vh;
     }
+    .aboutUsArticle h2{
+        font-size: 20px;
+    }
+
+    .aboutUsArticle p{
+        font-size: 16px;
+    }
+
+    #aboutUsPictureSustainability{
+        float: left; 
+        height: 250px;
+        border-right-width: 5px;
+    }
+
+    #aboutUsPictureOurMission{
+        float: left; 
+        height: 250px;
+        border-right-width: 5px;
+    }
 
     #ourStory{
         margin-left: 1vw;
@@ -645,6 +697,11 @@ a{
 
     #sustainability{
         margin-right: 1vw;
+        margin-top: 0vh;
+    }
+
+    #ourMission{
+        margin-bottom: 0;
     }
 
     #gridWrapperAnalogPhotographyCourse{
@@ -674,7 +731,7 @@ a{
     }
 
     .analogCourseText p{
-        font-size: 2.5vh;
+        font-size: 17px;
     }
 
     .analogCourseText h2{
@@ -728,7 +785,6 @@ a{
         margin-top: 1vh;
         height: 44vh;
         width: 66vw;
-        border-top: visible;
         border-left: none;
         border-top-left-radius: 0px;
         border-top-right-radius: 7px;
